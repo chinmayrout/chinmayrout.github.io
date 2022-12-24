@@ -38,6 +38,7 @@ jobs:
         bundler-cache: true
     - name: Install deps
       run: |
+        gem install sass-embedded -v 1.57.1
         gem install jekyll bundler
         bundle config path vendor/bundle
         bundle install --jobs 4 --retry 3
